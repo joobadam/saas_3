@@ -117,7 +117,7 @@ const Navbar2 = () => {
     { href: "/", label: "Home" },
     { href: "/product-details", label: "Product Details" },
     { href: "/pricing", label: "Pricing" },
-    { href: "/about", label: "About" },
+    { href: "/contact", label: "Contact" },
   ];
 
   const dropdownLinks = [

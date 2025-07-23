@@ -58,7 +58,7 @@ export function Faq5() {
         <AnimatedGroup staggerDelay={0.2} className="mb-12 max-w-3xl md:mb-16 lg:mb-20">
           <div className="flex items-center gap-3 mb-6">
             <div className="p-3 bg-primary bg-opacity-20 rounded-large">
-              <HelpCircle className="w-8 h-8 text-primary" />
+              <HelpCircle className="w-8 h-8 text-white" />
             </div>
             <p className="text-sm font-semibold uppercase tracking-wider text-primary font-inter">
               Frequently Asked Questions
@@ -88,8 +88,8 @@ export function Faq5() {
                   transition: { duration: 0.3 },
                 }}
               >
-                <Card className="bg-neutral-white border border-neutral-light rounded-large shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden">
-                  <AccordionItem value={`item-${index}`} className="border-none">
+                <Card className="bg-neutral-white my-6 border border-neutral-light rounded-large shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden">
+                  <AccordionItem value={`item-${index}`} className="border-none ">
                     <AccordionTrigger className="px-6 py-6 hover:no-underline group md:px-8 md:py-7 [&[data-state=open]]:bg-neutral-lightest transition-colors duration-300">
                       <div className="flex items-center gap-4 flex-1">
                         <div className="text-2xl">{faq.icon}</div>
@@ -121,7 +121,7 @@ export function Faq5() {
             <div className="mx-auto max-w-2xl">
               <div className="flex justify-center mb-6">
                 <div className="p-4 bg-primary bg-opacity-20 rounded-large">
-                  <MessageCircle className="w-10 h-10 text-primary" />
+                  <MessageCircle className="w-10 h-10 text-white" />
                 </div>
               </div>
 

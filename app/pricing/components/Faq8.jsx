@@ -31,40 +31,42 @@ export function Faq8() {
 
   return (
     <section id="relume" className="bg-neutral-white px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container-custom grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-12 lg:grid-cols-[.75fr,1fr] lg:gap-x-20">
+      <div className="container-custom">
         <AnimatedGroup preset="blur-slide" staggerDelay={0.3}>
-          {/* Left Side - Header */}
-          <div>
-            <h2 className="mb-5 text-5xl font-bold font-mochiy text-neutral-darkest md:mb-6 md:text-7xl lg:text-8xl">
-              FAQs
-            </h2>
-            <p className="text-neutral-dark font-inter md:text-lg">
-              Find answers to your questions about our pricing plans and options
-              below.
-            </p>
-            <div className="mt-6 md:mt-8">
-              <Button 
-                variant="outline"
-                className="border-neutral-dark text-neutral-darkest hover:bg-neutral-lighter hover:border-primary hover:text-primary transition-all duration-200"
-                size="lg"
-              >
-                Contact
-              </Button>
-            </div>
-          </div>
-
-          {/* Right Side - FAQ Items */}
-          <div className="grid grid-cols-1 gap-x-12 gap-y-10 md:gap-y-12">
-            {faqItems.map((item, index) => (
-              <div key={index} className="hover-lift">
-                <h3 className="mb-3 text-base font-bold font-mochiy text-neutral-darkest md:mb-4 md:text-lg">
-                  {item.question}
-                </h3>
-                <p className="text-neutral-dark font-inter leading-relaxed">
-                  {item.answer}
-                </p>
+          <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-12 lg:grid-cols-[.75fr,1fr] lg:gap-x-20">
+            {/* Left Side - Header */}
+            <div>
+              <h2 className="mb-5 text-5xl font-bold font-mochiy text-neutral-darkest md:mb-6 md:text-7xl lg:text-8xl">
+                FAQs
+              </h2>
+              <p className="text-neutral-dark font-inter md:text-lg">
+                Find answers to your questions about our pricing plans and options
+                below.
+              </p>
+              <div className="mt-6 md:mt-8">
+                <Button 
+                  variant="outline"
+                  className="border-neutral-dark text-neutral-darkest hover:bg-neutral-lighter hover:border-primary hover:text-primary transition-all duration-200"
+                  size="lg"
+                >
+                  Contact
+                </Button>
               </div>
-            ))}
+            </div>
+
+            {/* Right Side - FAQ Items */}
+            <div className="grid grid-cols-1 gap-x-12 gap-y-10 md:gap-y-12">
+              {faqItems.map((item, index) => (
+                <div key={index} className="hover-lift">
+                  <h3 className="mb-3 text-base font-bold font-mochiy text-neutral-darkest md:mb-4 md:text-lg">
+                    {item.question}
+                  </h3>
+                  <p className="text-neutral-dark font-inter leading-relaxed">
+                    {item.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </AnimatedGroup>
       </div>
